@@ -1,6 +1,6 @@
-package pl.sda.joanna;
+package pl.sda.joanna.converter;
 
-import static pl.sda.joanna.UnitConverter.*;
+import static pl.sda.joanna.converter.UnitConverter.*;
 
 public class Application {
     public static void main(String[] args) {
