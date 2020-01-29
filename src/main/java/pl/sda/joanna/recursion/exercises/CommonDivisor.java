@@ -1,6 +1,7 @@
-package pl.sda.joanna;
+package pl.sda.joanna.recursion.exercises;
 
 public class CommonDivisor {
+
 
     int greatestCommonDivisor(int a, int b) {
         int gcd = 0;
