@@ -1,4 +1,5 @@
-package pl.sda.joanna;
+package pl.sda.joanna.exercises.person;
+
 
 import java.time.LocalDate;
 
