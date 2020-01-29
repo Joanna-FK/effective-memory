@@ -1,4 +1,4 @@
-package pl.sda.joanna;
+package pl.sda.joanna.recursion.exercises;
 
 public class Factorial {
     //metoda rekurencyjna
