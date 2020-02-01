@@ -19,7 +19,7 @@ public class TimeCalculator {
             nextDayChristmas= nextDayChristmas.plusYears(1);
         }
 
-        LocalDate dateChristmasEve = LocalDate.of(now.getYear(),12,24);
+
         long howManyDays= ChronoUnit.DAYS.between(now, nextDayChristmas);
             System.out.println("It's just " + howManyDays +" "+"to Christmas Eve!");
             if (howManyDays<60){
