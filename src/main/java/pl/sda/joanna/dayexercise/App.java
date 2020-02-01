@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
     TimeCalculator.daysToChristmasEveInfo();
     TimeCalculator.daysToChristmasEve(LocalDate.of(2020,7,24));
@@ -12,6 +12,6 @@ public class App {
     TimeCalculator.daysToChristmasEve(LocalDate.of(2021,2,14));
     TimeCalculator.daysToChristmasEve(LocalDate.of(2023,12,28));
 
-
+    TimeCalculator.minutesToEndOfClass();
     }
 }
