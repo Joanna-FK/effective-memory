@@ -8,6 +8,8 @@ public class AppSearch {
         int result =BinarySearch.myBinarySearch(numbers, 56, 0, numbers.length-1);
         System.out.println(result);
 
+//        searchTest();
+//        System.out.println();
     }
     private static void searchTest (){
         SoftDrink softDrinkOne = new SoftDrink("Fanta", "Pepsi", 5.5);
