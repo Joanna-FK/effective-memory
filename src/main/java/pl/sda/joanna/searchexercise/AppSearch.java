@@ -4,6 +4,12 @@ package pl.sda.joanna.searchexercise;
 public class AppSearch {
     public static void main(String[] args) {
 
+        int [] numbers = { 45,859,0,56,-4,124,-58};
+        int result =BinarySearch.myBinarySearch(numbers, 56, 0, numbers.length-1);
+        System.out.println(result);
+
+    }
+    private static void searchTest (){
         SoftDrink softDrinkOne = new SoftDrink("Fanta", "Pepsi", 5.5);
         SoftDrink softDrinkTwo = new SoftDrink("Sprite", "Pepsi", 6.5);
         SoftDrink softDrinkThree = new SoftDrink("Pepsi light", "Pepsi", 4.5);
