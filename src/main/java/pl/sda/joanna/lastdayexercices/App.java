@@ -1,17 +1,25 @@
 package pl.sda.joanna.lastdayexercices;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class App {
     public static void main(String[] args) {
-        StreamsExample.loopExample();
-        StreamsExample.streamExample();
 
-        List<String> words = WordProvider.provide();
-        firstTask(words);
-        secondTask(words);
-        thirdTask(words);
+        List<Integer> numbers = Arrays.asList(1,0,78,968,-457,365,457,415,-457,52358,-47,12,475,-35,457,698,74,-147,96,-7);
+        IntegerService.intSum(numbers);
+        IntegerService.intAverage(numbers);
+        IntegerService.printAllStatistics(numbers);
+
+
+//        StreamsExample.loopExample();
+//        StreamsExample.streamExample();
+//
+//        List<String> words = WordProvider.provide();
+//        firstTask(words);
+//        secondTask(words);
+//        thirdTask(words);
 
 
     }
