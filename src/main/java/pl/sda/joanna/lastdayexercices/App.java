@@ -9,18 +9,32 @@ public class App {
         StreamsExample.streamExample();
 
         List<String> words = WordProvider.provide();
-
-        List<String> wordStartD =  words.stream()
-                .filter(word -> word.startsWith("d"))
-                .collect(Collectors.toList());
-        System.out.println(wordStartD);
-
-        List<String> wordStartA = words.stream()
-                .filter(word -> word.startsWith("a") && word.length()<=4)
-                .collect(Collectors.toList());
-        System.out.println(wordStartA);
+        firstTask(words);
+        secondTask(words);
+        thirdTask(words);
 
 
     }
 
+    public static void firstTask(List<String> words) {
+        List<String> wordStartD = words.stream()
+                .filter(word -> word.startsWith("d"))
+                .collect(Collectors.toList());
+        System.out.println(wordStartD);
+    }
+
+    public static void secondTask(List<String> words) {
+        List<String> wordStartA = words.stream()
+                .filter(word -> word.startsWith("a") && word.length() <= 4)
+                .collect(Collectors.toList());
+        System.out.println(wordStartA);
+    }
+
+    public static void thirdTask(List<String> words) {
+        List<String> upperCaseWords = words.stream()
+                .map(s -> s.substring(0, 1)
+                        .toUpperCase() + s.substring(1)).collect(Collectors.toList());
+        System.out.println(upperCaseWords);
+
+    }
 }
