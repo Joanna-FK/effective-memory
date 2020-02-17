@@ -1,4 +1,5 @@
 package pl.sda.joanna.mapandset;
+
 import java.util.Objects;
 
 public class Employee {
@@ -13,12 +14,15 @@ public class Employee {
         this.peselNumber = peselNumber;
         this.salary = salary;
     }
+
     public int getSalary() {
         return salary;
     }
-    public void giveRaise(int amount){
+
+    public void giveRaise(int amount) {
         salary = salary + amount;
     }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -27,6 +31,7 @@ public class Employee {
                 ", salary=" + salary +
                 '}';
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -36,6 +41,7 @@ public class Employee {
                 Objects.equals(name, employee.name) &&
                 Objects.equals(peselNumber, employee.peselNumber);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(name, peselNumber, salary);
