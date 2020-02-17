@@ -19,8 +19,8 @@ public class Employee {
         return salary;
     }
 
-    public void giveRaise(int amount) {
-        salary = salary + amount;
+    public int giveRaise(int amount) {
+        return salary + amount;
     }
 
     @Override
