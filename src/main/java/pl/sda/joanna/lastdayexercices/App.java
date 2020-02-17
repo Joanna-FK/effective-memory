@@ -13,13 +13,13 @@ public class App {
         IntegerService.printAllStatistics(numbers);
 
 
-//        StreamsExample.loopExample();
-//        StreamsExample.streamExample();
-//
-//        List<String> words = WordProvider.provide();
-//        firstTask(words);
-//        secondTask(words);
-//        thirdTask(words);
+        StreamsExample.loopExample();
+        StreamsExample.streamExample();
+
+        List<String> words = WordProvider.provide();
+        firstTask(words);
+        secondTask(words);
+        thirdTask(words);
 
 
     }
