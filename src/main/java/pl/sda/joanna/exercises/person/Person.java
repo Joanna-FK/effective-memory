@@ -2,7 +2,7 @@ package pl.sda.joanna.exercises.person;
 
 import java.time.LocalDate;
 
-public class Person {
+public class Person implements Comparable <Person> {
     private String firstName;
     private String lastName;
     private String peselNumber;
@@ -29,5 +29,22 @@ public class Person {
 
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", peselNumber='" + peselNumber + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Person otherPerson) {
+
+        return this.dateOfBirth.compareTo(otherPerson.dateOfBirth);
+
     }
 }
